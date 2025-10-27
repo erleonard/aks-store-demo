@@ -77,10 +77,12 @@ kubectl apply -f aks-store-ingress-quickstart.yaml
 ```
 
 This will create:
-- All application services (store-front, order-service, product-service, rabbitmq)
+- Application services: store-front, order-service, product-service, and rabbitmq
 - A `GatewayClass` resource named "traefik"
 - A `Gateway` resource named "store-front-gateway"
 - An `HTTPRoute` resource named "store-front" that routes traffic to the store-front service
+
+Note: This is a simplified version of the AKS Store Demo. For the full application including all services, use `aks-store-all-in-one.yaml` instead.
 
 ### Step 5: Access the Application
 
